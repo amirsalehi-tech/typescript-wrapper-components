@@ -1,11 +1,17 @@
-import {useRef} from "react";
 import Input from "./components/Input";
+import Form from "./components/Form";
+import Button from "./components/Button";
 
 export default function App() {
-  const ref = useRef<HTMLInputElement>(null);
   return (
     <main>
-      <Input id="test" label="Test" ref={ref} />
+      <Form>
+        <Input id="name" label="name" type="text" />
+        <Input id="age" label="age" type="number" />
+        <p>
+          <Button>Save</Button>
+        </p>
+      </Form>
     </main>
   );
 }
