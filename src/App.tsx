@@ -1,15 +1,11 @@
-import Container from "./components/Container";
+import {useRef} from "react";
+import Input from "./components/Input";
 
 export default function App() {
+  const ref = useRef<HTMLInputElement>(null);
   return (
     <main>
-      <Container
-        as="button"
-        type="button"
-        onClick={() => alert("Hello World!")}
-      >
-        Click Me
-      </Container>
+      <Input id="test" label="Test" ref={ref} />
     </main>
   );
 }
