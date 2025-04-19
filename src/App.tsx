@@ -6,11 +6,9 @@ export default function App() {
     <main>
       <Input type="text" label="name" id="name" />
       <Input type="number" label="age" id="age" />
-      <Button className="button" href="https://www.google.com">
-        A Link
-      </Button>
+      <Button href="https://www.google.com">A Link</Button>
       <p>
-        <Button className="button">A Button</Button>
+        <Button>A Button</Button>
       </p>
     </main>
   );
